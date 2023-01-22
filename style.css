@@ -65,13 +65,25 @@ section {
     padding: 5px 5px;
 }
 
-.about-me {
+
+.description {
     margin: 20px 60px;
     text-align: center;
 }
 
-.my-bio {
+.description p {
+    color: darkgray;
+}
+
+.my-biodata {
     display: flex;
-    margin-left: 20px;
     text-align: center;
+}
+
+.my-biodata span {
+    margin-left: 90px;
+}
+
+.my-biodata span h1 {
+    color: darkgray;
 }
