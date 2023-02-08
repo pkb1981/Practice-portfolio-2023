@@ -172,3 +172,68 @@ main {
 }
 
 /* resume related */
+/* content will be inlined */
+.resume-content {
+    display: flex;
+    gap: 24px;
+}
+
+.resume-item {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.resume .title {
+    font-weight: 700;
+    font-size: 25px;
+    color: #474747;
+    margin-bottom: 10px;
+}
+
+.resume .subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: #757575;
+    margin-bottom: 20px;
+}
+
+.resume .description {
+    color: #757575;
+}
+
+.resume-button {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* connect section styling */
+.contact {
+    display: flex;
+    gap: 117px;
+    background-color: #FFF8F3;
+    padding: 130px 200px;
+}
+
+.contact .section-title {
+    text-align: left;
+}
+
+/* lets message me styling */
+/* specify input type for implementing styles */
+.contact input[type="text"],
+input[type="email"],
+textarea {
+    margin-bottom: 24px;
+    border: 0;
+    width: 100%;
+    padding: 18px 30px;
+}
+
+input {
+    height: 64px;
+}
+
+/* anchor tag link indicator will be removed */
+.contact a {
+    text-decoration: none;
+}
