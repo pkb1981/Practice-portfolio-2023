@@ -4,6 +4,11 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+/* all sections margin-top margin */
+section {
+    margin-top: 130px;
+}
+
 /* background color & two image position implement for banner */
 .header {
     background-color: #FFF8F3;
@@ -97,7 +102,6 @@ main {
 
 /* about me section styles */
 .about {
-    margin-top: 130px;
     background-color: #FFF8F3;
     border-radius: 10px;
     padding: 130px 150px;
@@ -106,9 +110,10 @@ main {
 
 /* about me title centered */
 .section-title {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 35px;
+    text-align: center;
 }
 
 /* about me text styled */
@@ -131,8 +136,39 @@ main {
     color: #757575;
 }
 
+/* styled info  */
 .info-description {
     font-size: 20px;
     font-weight: 700;
     color: #474747;
 }
+
+/* styles skills arranged inline */
+/* 24px gap between skills container */
+.skills-container {
+    display: flex;
+    gap: 24px;
+}
+
+/* skills styling */
+.skills {
+    background-color: #FFFFFF;
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    padding: 30px;
+}
+
+/* styling skill title */
+.skill-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* skill text styling */
+.skill-description {
+    color: #757575;
+}
+
+/* resume related */
