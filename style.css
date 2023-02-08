@@ -23,7 +23,7 @@ section {
 nav {
     display: flex;
     justify-content: space-between;
-    margin: 50px 200px;
+    padding: 50px 200px;
 }
 
 /* button styling by using its class (btn-primary) */
