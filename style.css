@@ -213,8 +213,14 @@ main section {
     color: #757575;
 }
 
-/* resume related */
+/* RESUME SECTION STYLES */
 /* content will be inlined */
+.resume-column-title {
+    font-weight: 700;
+    font-size: 25px;
+    color: #474747;
+}
+
 .resume-container {
     display: flex;
     gap: 24px;
@@ -223,13 +229,6 @@ main section {
 .resume-column {
     margin-top: 30px;
     margin-bottom: 30px;
-}
-
-.resume .title {
-    font-weight: 700;
-    font-size: 25px;
-    color: #474747;
-    margin-bottom: 10px;
 }
 
 .resume .subtitle {
