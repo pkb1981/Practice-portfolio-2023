@@ -1,6 +1,8 @@
+/* HEADER SECTION STYLES */
 /* whole page will be without margin and font-family from google font sans sarif for whole web page */
-* {
+body {
     margin: 0;
+    font-family: 'lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -10,6 +12,8 @@ section {
 }
 
 /* background color & two image position implement for banner */
+/* by default BG image is repeating hence no-repeat was implemented */
+/* change the BG image position by default from top left to  */
 .header {
     background-color: #FFF8F3;
     background-image: url(./Images/header_bg.png), url(./Images/developer.png);
@@ -17,110 +21,137 @@ section {
     background-position: bottom right, left;
 }
 
-/* navigation inline style */
-/* content will arranged two sides of page */
-/* margin left right up and down of nav- bar */
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 200px;
-}
-
-/* button styling by using it]s class (btn-primary) */
-/* make border remove by (border:0) */
-/* button  padding is (18px 35px) for top bottom/left right */
-.btn-primary {
-    font-size: 20px;
-    font-weight: 700;
-    height: 64px;
-    background-color: #FD6E0A;
-    padding: 18px 35px;
-    border: 0;
-    border-radius: 5px;
-    color: white;
-}
-
-/* list of menus arranged inline */
-/* list of menues will be alligned horizontally */
-nav ul {
-    display: flex;
-    align-items: center;
-}
-
-/* list item unlisted */
-/* creating space between list of items */
-nav li {
-    list-style: none;
-    margin-left: 50px;
-}
-
-/* header and navigation style */
-
-.nav-title {
-    font-weight: 800;
-    font-size: 45px;
-}
-
-/* title color */
-.title-color {
-    color: #FD6E0A;
-}
-
-/* banner styling */
-/* creating left right side 200px margin and arranging inline by (display:flex) */
+/* banner padding up right down 0 and left */
+/* making banner inlining */
+/* making content inlining */
 .banner {
-    margin: 0 200px;
+    padding: 30px 30px 0 150px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.banner-content {
+    max-width: 500px;
+}
+
+/* styling banner greeting */
+.banner-greeting {
+    font-size: 45px;
+    font-weight: 700;
+    color: #474747;
+    margin-bottom: 0px;
 }
 
 /* styling banner title */
 .banner-title {
-    font-weight: 600;
+    font-size: 85px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 20px;
+
+}
+
+nav {
+    /* flex used to  arrange all content in the same line */
+    display: flex;
+    /* all content arranged left and right of the page */
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 200px;
+}
+
+/* button styling by using HTML button class (btn-primary) */
+/* make border around button remove by (border:0) */
+/* button  padding is (15px 35px) around the button which will by anticlockwise */
+.btn-primary {
+    border-radius: 5px;
+    background-color: #FD6E0A;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px 35px;
+}
+
+/* ul list of immediate nav will be arranged inline */
+/* list of menus will be aligned horizontally */
+nav>ul {
+    display: flex;
+    align-items: center;
+}
+
+/* remove unorder list dot symbol from menus  */
+/* creating space by right margin between the menus */
+nav li {
+    list-style: none;
+    margin-right: 50px;
+}
+
+/* remove underline from menu name */
+nav a {
+    text-decoration: none;
+    color: #474747;
+}
+
+/* change the pallab color,font-size & font-weight */
+
+.nav-title {
+    color: #181818;
+    font-weight: 800;
     font-size: 45px;
 }
 
-/* styling banner subtitle */
-.banner-subtitle {
-    font-weight: 700;
-    font-size: 85px;
-    margin-bottom: 20px;
+/* Primary color of the website*/
+.text-primary {
+    color: #FD6E0A;
+}
+
+
+/* right hand banner profile picture size adjusted */
+.banner .profile-pic {
+    width: 500px;
 }
 
 /* styling banner text */
-.banner-text {
+.banner-description {
     font-size: 18px;
     color: #757575;
     margin-bottom: 30px;
 }
 
-/* main section change maximum width to 1140px and margin up&down 0 and left& right autometically centered */
+/* MAIN SECTION STYLING */
+/* main section change maximum width to 1140px and margin up&down 0 and left& right automatically centered */
 main {
     max-width: 1140px;
     margin: 0 auto;
 }
 
-/* about me section styles */
-.about {
-    background-color: #FFF8F3;
-    border-radius: 10px;
-    padding: 130px 150px;
-    text-align: center;
+main section {
+    margin-top: 130px;
 }
 
-/* about me title centered */
+/* about me section styles */
+.about {
+    padding: 130px;
+    background-color: #FFF8F3;
+    border-radius: 10px;
+    margin: 130px 0;
+}
+
+/* about me title */
 .section-title {
-    margin-bottom: 50px;
+    color: #181818;
     font-weight: 700;
     font-size: 35px;
     text-align: center;
 }
 
-/* about me text styled */
-.section-text {
+/* about me description styled */
+.section-description {
     color: #757575;
+    text-align: center;
     font-size: 18px;
-    margin-bottom: 30px;
 }
 
 /* about info styled by arranging inline */
@@ -128,6 +159,10 @@ main {
 .about-info-container {
     display: flex;
     justify-content: space-around;
+}
+
+.about-info {
+    text-align: center;
 }
 
 /* styled info title */
@@ -143,7 +178,13 @@ main {
     color: #474747;
 }
 
-/* styles skills arranged inline */
+/* WHAT ID DO PART STYLED */
+/* what i do text info padding */
+#what-i-do-description {
+    padding: 30px 150px;
+}
+
+/* styles skills arranged inline by display flex */
 /* 24px gap between skills container */
 .skills-container {
     display: flex;
@@ -151,11 +192,12 @@ main {
 }
 
 /* skills styling */
-.skills {
-    background-color: #FFFFFF;
-    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
-    border-radius: 5px;
+.skill {
     padding: 30px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+
 }
 
 /* styling skill title */
@@ -173,12 +215,12 @@ main {
 
 /* resume related */
 /* content will be inlined */
-.resume-content {
+.resume-container {
     display: flex;
     gap: 24px;
 }
 
-.resume-item {
+.resume-column {
     margin-top: 30px;
     margin-bottom: 30px;
 }

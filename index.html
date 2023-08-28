@@ -8,11 +8,12 @@
     <title>Developer Portfolio-2023</title>
     <!-- awsome kit link from awsome.com for using awsome font  -->
     <script src="https://kit.fontawesome.com/07e3f924b6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
     <!-- linking google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- linking css external file -->
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -20,8 +21,8 @@
     <header class="header">
         <!-- navigation part-->
         <nav>
-            <h2 class="nav-title">Pa<span class="title-color">ll</span>ab</h2>
-            <!-- menu set -->
+            <h3 class="nav-title">Pa<span class="text-primary">ll</span>ab</h3>
+            <!-- menus in the nav bar-->
             <ul>
                 <li>Portfolio</li>
                 <li>Blogs</li>
@@ -31,26 +32,28 @@
         <!-- banner starts -->
         <div class="banner">
             <!-- left banner-->
-            <div>
-                <h3 class="banner-title">Hi, I am</h3>
-                <h1 class="banner-subtitle">Pallab Biswas</h1>
-                <p class="banner-text">Shot what able cold new see hold.Friendly as an betrayed formerly he. Morning
+            <div class="banner-content">
+                <h3 class="banner-greeting">Hi, I am</h3>
+                <h1 class="banner-title">Pallab Biswas</h1>
+                <p class="banner-description">Shot what able cold new see hold.Friendly as an betrayed formerly he.
+                    Morning
                     because as to society
                     behaved moments.</p>
                 <!-- button for left banner -->
                 <!-- font awsome icon copy and paste here -->
                 <button class="btn-primary"><i class="fa-solid fa-download"></i>
                     Download CV</button>
+                <button class="btn-primary">Contact</button>
             </div>
             <!-- right banner image -->
-            <img src="./Images/pallab.png" alt="">
+            <img class="profile-pic" src="./Images/pallab.png" alt="">
         </div>
     </header>
     <main>
         <!-- about me section -->
         <section class="about">
             <h3 class="section-title">About Me</h3>
-            <p class="section-text">I, m a designer & developer with a passion for web design. I enjoy developing
+            <p class="section-description">I, m a designer & developer with a passion for web design. I enjoy developing
                 simple, clean and slick websites that provide real value to the end user. Thousands of clients have
                 procured exceptional resulfs while working with me. Delivering work within time and budget which meets
                 clients requirements in our mata.</p>
@@ -74,29 +77,36 @@
                 </div>
             </div>
         </section>
-        <section class="what-i-do">
+        <!-- WHAT I DO SECTION -->
+        <section>
             <h3 class="section-title">What I do</h3>
+            <p id="what-i-do-description" class="section-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius consectetur similique minima corrupti
+                omnis, voluptates ad harum at nulla temporibus tenetur odit saepe incidunt repudiandae sit itaque
+                mollitia fuga magnam, sint ut. Quo vitae nihil, ex debitis numquam eveniet, vel aut beatae sit, possimus
+                voluptatum non molestias cupiditate quia!
+            </p>
             <!-- emet--.skills-container>.skills*4>img+p.skill-title+p.skill-description>lorem15 -->
             <div class="skills-container">
-                <div class="skills">
+                <div class="skill">
                     <img src="./icons/js.png" alt="">
                     <p class="skill-title">Vanilla JavaScript</p>
                     <p class="skill-description">List skill/technologies here. You can change the icon above to any of
                         the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
                 </div>
-                <div class="skills">
+                <div class="skill">
                     <img src="./icons/react.png" alt="">
                     <p class="skill-title">React</p>
                     <p class="skill-description">List skill/technologies here. You can change the icon above to any of
                         the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
                 </div>
-                <div class="skills">
+                <div class="skill">
                     <img src="./icons/nodejs.png" alt="">
                     <p class="skill-title">Node.js</p>
                     <p class="skill-description">List skill/technologies here. You can change the icon above to any of
                         the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
                 </div>
-                <div class="skills">
+                <div class="skill">
                     <img src="./icons/mongo.png" alt="">
                     <p class="skill-title">MongoDB</p>
                     <p class="skill-description">List skill/technologies here. You can change the icon above to any of
@@ -105,30 +115,30 @@
             </div>
         </section>
         <!-- resume summary left hand side -->
-        <section class="resume">
-            <h3 class="section-title">A summary of my resume</h3>
-            <div class="resume-content">
+        <section>
+            <h3 class="section-resume">A summary of my resume</h3>
+            <div class="resume-container">
                 <div>
-                    <h3 class="resume-title">My education</h3>
-                    <div class="resume-item">
-                        <h4 class="title">Master in Computer Engineering</h4>
-                        <h5 class="subtitle">Harvard University / 2015 - 2017</h5>
+                    <h3 class="resume-resume">My education</h3>
+                    <div class="resume-column">
+                        <h4 class="resume-column">Master in Computer Engineering</h4>
+                        <h5 class="subresume">Harvard University / 2015 - 2017</h5>
                         <p class="description">List skill/technologies here. You can change the icon above
                             to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
                         </p>
                     </div>
                     <hr>
-                    <div class="resume-item">
-                        <h4 class="title">Master in Computer Engineering</h4>
-                        <h5 class="subtitle">Harvard University / 2015 - 2017</h5>
+                    <div class="resume-column">
+                        <h4 class="resume">Master in Computer Engineering</h4>
+                        <h5 class="subresume">Harvard University / 2015 - 2017</h5>
                         <p class="description">List skill/technologies here. You can change the icon above
                             to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
                         </p>
                     </div>
                     <hr>
-                    <div class="resume-item">
-                        <h4 class="title">Master in Computer Engineering</h4>
-                        <h5 class="subtitle">Harvard University / 2015 - 2017</h5>
+                    <div class="resume-column">
+                        <h4 class="resume-column">Master in Computer Engineering</h4>
+                        <h5 class="subresume">Harvard University / 2015 - 2017</h5>
                         <p class="description">List skill/technologies here. You can change the icon above
                             to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
                         </p>
@@ -136,26 +146,26 @@
                 </div>
                 <!-- resume summary right hand side -->
                 <div>
-                    <h3 class="resume-title">My Experience</h3>
-                    <div class="resume-item">
-                        <h4 class="title">Sr. Font End Developer</h4>
-                        <h5 class="subtitle">Apple Inc / 2022 - Current</h5>
+                    <h3 class="resume">My Experience</h3>
+                    <div class="resume-column">
+                        <h4 class="resume">Sr. Font End Developer</h4>
+                        <h5 class="subresume">Apple Inc / 2022 - Current</h5>
                         <p class="description">List skill/technologies here. You can change the icon above
                             to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
                         </p>
                     </div>
                     <hr>
-                    <div class="resume-item">
-                        <h4 class="title">Jr. Font End Developer</h4>
-                        <h5 class="subtitle">Dribbble Inc / 2018 - 2022</h5>
+                    <div class="resume-column">
+                        <h4 class="resume-column">Jr. Font End Developer</h4>
+                        <h5 class="subresume-column">Dribbble Inc / 2018 - 2022</h5>
                         <p class="description">List skill/technologies here. You can change the icon above
                             to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
                         </p>
                     </div>
                     <hr>
-                    <div class="resume-item">
-                        <h4 class="title">HTML Developer</h4>
-                        <h5 class="subtitle">Adobe Inc / 2017 - 2018</h5>
+                    <div class="resume-column">
+                        <h3 class="resume-column">HTML Developer</h3>
+                        <h5 class="subresume">Adobe Inc / 2017 - 2018</h5>
                         <p class="description">List skill/technologies here. You can change the icon above
                             to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
                         </p>
@@ -170,8 +180,9 @@
         <!-- contact section -->
         <section class="contact">
             <div>
-                <h2 class="section-title">Lets Connect</h2>
-                <p class="section-text">Please fill out the form on this section to contact with me or call between 9:00
+                <h2 class="section-resume">Lets Connect</h2>
+                <p class="section-description">Please fill out the form on this section to contact with me or call
+                    between 9:00
                     A.M and 8.00 P.M ET,
                     Monday through Friday.</p>
                 <a href="">
@@ -185,7 +196,7 @@
                 </a>
             </div>
             <div>
-                <h2 class="section-title">Lets Message Me</h2>
+                <h2 class="section-resume">Lets Message Me</h2>
                 <!-- form creation -->
                 <input type="text" name="" id="" placeholder="your name">
                 <input type="email" name="" id="" placeholder="your email">
