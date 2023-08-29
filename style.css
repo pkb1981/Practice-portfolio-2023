@@ -250,10 +250,10 @@ main section {
     text-align: center;
 }
 
-/* connect section styling */
-.contact {
+/* FOOTER SECTION STYLING */
+.footer {
     display: flex;
-    gap: 117px;
+    margin-top: 100px;
     background-color: #FFF8F3;
     padding: 130px 200px;
 }
