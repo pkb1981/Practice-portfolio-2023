@@ -251,33 +251,31 @@ main section {
 }
 
 /* FOOTER SECTION STYLING */
-.footer {
+footer {
     display: flex;
+    gap: 100px;
     margin-top: 100px;
     background-color: #FFF8F3;
     padding: 130px 200px;
 }
 
-.contact .section-title {
-    text-align: left;
+.footer-column {
+    width: 50%;
 }
 
-/* lets message me styling */
-/* specify input type for implementing styles */
+.social-links a {
+    margin-right: 25px;
+}
+
 .contact input[type="text"],
-input[type="email"],
+.contact input[type="email"],
 textarea {
-    margin-bottom: 24px;
+    display: block;
+    margin-bottom: 25px;
+    padding: 18px 35px;
+    color: #757575;
+    border-radius: 5px;
+    background: #fff;
     border: 0;
     width: 100%;
-    padding: 18px 30px;
-}
-
-input {
-    height: 64px;
-}
-
-/* anchor tag link indicator will be removed */
-.contact a {
-    text-decoration: none;
 }
